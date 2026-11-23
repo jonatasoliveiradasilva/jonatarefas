@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import type { FormEvent } from "react";
-
 interface PropriedadeFormulario {
     aoAdicionar: (texto: string) => void;
 }

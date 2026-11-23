@@ -11,10 +11,9 @@ const Filtro = ({
 }: PropriedadeFiltro) => {
 
     const classeBotao = (filtro: TipoFiltro) => {
-
         return filtroAtual === filtro
-            ? "rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white"
-            : "rounded-md bg-slate-100 px-4 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-200";
+            ? "cursor-pointer rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white"
+            : "cursor-pointer rounded-md bg-slate-100 px-4 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-200";
     };
 
     return (

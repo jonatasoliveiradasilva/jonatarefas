@@ -61,6 +61,7 @@
 ```text
 src/
 ├── components/
+|
 │   ├── Cabecalho/
 │   ├── Formulario/
 │   ├── Filtro/
@@ -121,13 +122,11 @@ Durante o desenvolvimento deste projeto, estou colocando em prática conceitos i
 
 ## 🔮 Melhorias Futuras
 
-- [] Adicionar categorias às tarefas.
-- [] Editar tarefas existentes.
-- [] Implementar datas de vencimento.
-- [] Melhorar a experiência visual da aplicação.
+- Adicionar categorias às tarefas.
+- Editar tarefas existentes.
+- Implementar datas de vencimento.
+- Melhorar a experiência visual da aplicação.
 
-- Desenvolvedor Front End Jr em formação, estudando e aprimorando conhecimentos em HTML, CSS, JavaScript, React e TypeScript.
+### O **Jônatarefas** faz parte da minha jornada de aprendizado e desenvolvimento de projetos práticos para o meu portfólio.
 
-- O **Jônatarefas** faz parte da minha jornada de aprendizado e desenvolvimento de projetos práticos para o meu portfólio.
-
-- ⭐ Se você gostou do projeto, deixe uma estrela no repositório!
+### ⭐ **Se você gostou do projeto, deixe uma estrela no repositório!**

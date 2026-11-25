@@ -8,12 +8,14 @@ interface PropriedadeLista {
 
     aoAlternarConclusao: (id: number) => void;
     aoExcluir: (id: number) => void;
+    aoEditar: (id: number, novoTexto: string) => void;
 }
 
 const Lista = ({
     tarefas,
     aoAlternarConclusao,
     aoExcluir,
+    aoEditar,
 }: PropriedadeLista) => {
 
     return (
@@ -46,6 +48,7 @@ const Lista = ({
                                     concluida={tarefa.concluida}
                                     aoAlternarConclusao={aoAlternarConclusao}
                                     aoExcluir={aoExcluir}
+                                    aoEditar={aoEditar}
                                 />
                             ))
                         }

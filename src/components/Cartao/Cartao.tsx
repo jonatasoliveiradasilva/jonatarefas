@@ -10,6 +10,7 @@ interface PropriedadeCartao {
 
     aoAlternarConclusao: (id: number) => void;
     aoExcluir: (id: number) => void;
+    aoEditar: (id: number, novoTexto: string) => void;
 }
 
 const Cartao = ({
@@ -18,6 +19,7 @@ const Cartao = ({
     concluida,
     aoAlternarConclusao,
     aoExcluir,
+    aoEditar,
 }: PropriedadeCartao) => {
 
     const [editando, setEditando] = useState(false);
@@ -31,6 +33,8 @@ const Cartao = ({
         if (novoTexto === "") {
             return;
         }
+
+        aoEditar(id, novoTexto);
 
         setEditando(false);
     };
@@ -70,7 +74,7 @@ const Cartao = ({
                 )}
             </div>
             <div className="flex shrink-0 items-center gap-2">
-                
+
                 {editando ? (
                     <>
                         <button
@@ -103,11 +107,11 @@ const Cartao = ({
                             <Pencil size={18} />
                         </button>
                         <button
-                            
+
                             type="button"
-                            
+
                             onClick={() => {
-                                
+
                                 const confirmar = window.confirm(
                                     `Tem certeza que deseja excluir a tarefa "${texto}"?`
                                 );

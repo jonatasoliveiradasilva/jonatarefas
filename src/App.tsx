@@ -59,6 +59,19 @@ const App = () => {
     );
   };
 
+  const editarTarefa = (id: number, novoTexto: string) => {
+
+    setTarefas((tarefasAtuais) =>
+      
+      tarefasAtuais.map((tarefa) =>
+        
+        tarefa.id === id
+          ? { ...tarefa, texto: novoTexto }
+          : tarefa
+      )
+    );
+  };
+
   const tarefasFiltradas = tarefas.filter((tarefa) => {
 
     if (filtroAtual === "pendentes") {
@@ -94,6 +107,7 @@ const App = () => {
           tarefas={tarefasFiltradas}
           aoAlternarConclusao={alternarConclusao}
           aoExcluir={excluirTarefa}
+          aoEditar={editarTarefa}
         />
       </section>
     </main>
